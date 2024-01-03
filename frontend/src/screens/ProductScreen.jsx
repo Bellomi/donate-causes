@@ -104,26 +104,24 @@ const ProductScreen = () => {
 
                   <ListGroup.Item>
                     {product.countInStock > 0 && (
-                      <ListGroup.Item>
-                        <Row>
-                          <Col>Qty</Col>
-                          <Col>
-                            <Form.Control
-                              as="select"
-                              value={qty}
-                              onChange={(e) => setQty(Number(e.target.value))}
-                            >
-                              {[...Array(product.countInStock).keys()].map(
-                                (x) => (
-                                  <option key={x + 1} value={x + 1}>
-                                    {x + 1}
-                                  </option>
-                                )
-                              )}
-                            </Form.Control>
-                          </Col>
-                        </Row>
-                      </ListGroup.Item>
+                      <Row>
+                        <Col>Qty</Col>
+                        <Col>
+                          <Form.Control
+                            as="select"
+                            value={qty}
+                            onChange={(e) => setQty(Number(e.target.value))}
+                          >
+                            {[...Array(product.countInStock).keys()].map(
+                              (x) => (
+                                <option key={x + 1} value={x + 1}>
+                                  {x + 1}
+                                </option>
+                              )
+                            )}
+                          </Form.Control>
+                        </Col>
+                      </Row>
                     )}
 
                     <Button
@@ -131,6 +129,7 @@ const ProductScreen = () => {
                       type="button"
                       disabled={product.countInStock === 0}
                       onClick={addToCartHandler}
+                      class="mt-4"
                     >
                       Add to Cart
                     </Button>

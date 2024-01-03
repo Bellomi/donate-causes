@@ -44,7 +44,7 @@
   --bs-warning-rgb: 243, 156, 18;
   --bs-danger-rgb: 231, 76, 60;
   --bs-light-rgb: 244, 244, 244;
-  --bs-dark-rgb: 123, 155, 149;
+  --bs-dark-rgb: 0, 0, 153;
   --bs-primary-text: #303d4a;
   --bs-secondary-text: #7b8a8b;
   --bs-success-text: #13967d;
@@ -87,7 +87,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #7b8a8b;
+  --bs-body-color: #000080;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
   --bs-secondary-color: rgba(123, 138, 139, 0.75);
@@ -134,7 +134,7 @@
 }
 
 [data-bs-theme='dark'] {
-  --bs-body-color: #7b8a8b;
+  --bs-body-color: #000080;
   --bs-body-color-rgb: 123, 138, 139;
   --bs-body-bg: #7b8a8b;
   --bs-body-bg-rgb: 123, 138, 139;
@@ -149,7 +149,7 @@
   --bs-tertiary-bg: #7b8a8b;
   --bs-tertiary-bg-rgb: 123, 138, 139;
   --bs-emphasis-color: #fff;
-  --bs-primary-text: #8a949e;
+  --bs-primary-text: #0000FF;
   --bs-secondary-text: #b5c0c1;
   --bs-success-text: #74d7c4;
   --bs-info-text: #85c1e9;
@@ -259,7 +259,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1.0rem + 0.4vw);
 }
 @media (min-width: 1200px) {
   h3,
@@ -4526,6 +4526,7 @@ fieldset:disabled .btn {
 
 .card-text:last-child {
   margin-bottom: 0;
+  margin-top: 2px;
 }
 
 .card-link + .card-link {
